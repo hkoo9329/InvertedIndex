@@ -27,8 +27,10 @@ public class PreprocessText {
                     String inputData = null;
                     String text = "";
                     int counter = 1;
+                    //처음 입력은 문서 제목임 그것을 html tag를 삭제하고 docid로 사용
                     String docId =removeTag(br.readLine())+" ";
                     while ((inputData = br.readLine()) != null){
+                        //문서의 시작을 DOC 태그로 규정
                         if(inputData.contentEquals("<DOC>")){
                             while (true) {
                                 inputData = br.readLine();

@@ -2,7 +2,7 @@ public class PostingsNode {
 
     private String docId;
     private String text;
-
+// dictionary id number
     public PostingsNode (){
         this.docId = null;
         this.text = null;
